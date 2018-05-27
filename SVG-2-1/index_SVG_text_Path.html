@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Polygons and Polylines</title>
+
+</head>
+<body>
+
+    <svg height="500" width="500">
+        <!--Text Paths-->
+        <defs>
+            <path id="custom_text_path"
+                  d="M0,0 Q0,100 150,100"></path>
+        </defs>
+
+        <text x="10" y="100" stroke="#000" font-size="30">
+            <textPath xlink:href="#custom_text_path">
+                Hello World!
+            </textPath>
+        </text>
+    </svg>
+
+</body>
+</html>
